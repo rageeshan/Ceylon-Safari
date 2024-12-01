@@ -1,0 +1,62 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif; /* Clean font */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background color */
+    color: #333; /* Dark text for readability */
+}
+
+/* Container for the Form */
+.container {
+    max-width: 500px; /* Max width for form */
+    margin: 50px auto; /* Centered container */
+    padding: 20px;
+    background-color: #fff; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Form Title */
+h1 {
+    text-align: center;
+    color: #34495e; /* Darker color for title */
+    margin-bottom: 20px; /* Space below title */
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="phone"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Full width input fields */
+    padding: 10px; /* Padding inside input */
+    margin: 10px 0; /* Space between inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background-color: #5cb85c; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px; /* Padding */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 16px; /* Larger text */
+    width: 100%; /* Full width */
+}
+
+/* Submit Button Hover Effect */
+button[type="submit"]:hover {
+    background-color: #4cae4c; /* Darker green on hover */
+}
+
+/* Message */
+.message {
+    text-align: center;
+    color: green; /* Success message color */
+    margin-top: 20px; /* Space above message */
+}

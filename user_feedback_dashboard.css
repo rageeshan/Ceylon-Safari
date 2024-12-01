@@ -1,0 +1,144 @@
+
+
+/*pasindu*/
+
+
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif; /* Modern and clean font */
+    margin: 0;
+    padding: 0;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+/* Container for Dashboard */
+#dashboard-container {
+    max-width: 1100px; /* Wide container for modern screens */
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #FFFFFF; /* White background for contrast */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: box-shadow 0.3s ease;
+}
+
+#dashboard-container:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Shadow hover effect */
+}
+
+/* Dashboard Title */
+.title {
+    text-align: center;
+    color: #34495E; /* Professional dark blue */
+    font-size: 30px; /* Large title */
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #ECF0F1; /* Bottom border for title */
+    padding-bottom: 15px;
+}
+
+/* Feedback Entry Styling */
+.feedback-entry {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #E0E0E0; /* Light border */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #F9F9F9; /* Soft background */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.feedback-entry:hover {
+    background-color: #F1F1F1; /* Slight change on hover */
+    transform: translateY(-5px); /* Lift on hover */
+}
+
+/* Feedback Info */
+.feedback-entry p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #495057; /* Darker gray for text */
+}
+
+.feedback-entry strong {
+    color: #2C3E50; /* Strong contrast for labels */
+}
+
+/* Action Buttons */
+.action-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+/* Update Button */
+.btn-update {
+    background-color: #28A745; /* Fresh green */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-update:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Delete Button */
+.btn-delete {
+    background-color: #E74C3C; /* Bold red for delete */
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-delete:hover {
+    background-color: #C0392B; /* Darker red on hover */
+}
+
+/* No Feedback Message */
+.no-feedback {
+    text-align: center;
+    font-size: 18px;
+    color: #7F8C8D; /* Muted gray for no feedback message */
+    margin-top: 30px;
+}
+
+/* Footer Styling */
+.dashboard-footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #95A5A6; /* Muted gray for footer */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #dashboard-container {
+        padding: 20px;
+    }
+
+    .feedback-entry {
+        padding: 15px;
+    }
+
+    .btn-update, .btn-delete {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+}
